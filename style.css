@@ -81,6 +81,11 @@ nav.sticky .menu a:hover{
   font-size: 18px;
   margin: 0 6px;
 }
+.media-icons-1 a{
+  color: #fbfcfd;
+  font-size: 22px;
+  margin: 0 6px;
+}
 nav.sticky .media-icons a{
   color: #FFF;
 }
@@ -106,6 +111,25 @@ nav.sticky .menu-btn{
 .navbar .menu .menu-btn{
   color: #fff;
 }
+
+.home-content button a {
+  text-decoration: none;
+  color: #f1f1f1;
+}
+
+.home-content button a:hover {
+  color: #4070f4;
+}
+
+.button button a {
+  text-decoration: none;
+  color: #f1f1f1;
+}
+
+.button button a:hover {
+  color: #4070f4;
+}
+
 
 /* home section styling */
 .home{
@@ -164,6 +188,7 @@ nav.sticky .menu-btn{
   border-color: #4070f4;
   background-color: #fff;
   color: #4070f4;
+  padding: 10px 19px;
  }
 
 
@@ -379,6 +404,16 @@ footer .text span{
   font-weight: 400;
   color: #fff;
 }
+footer .text p b{
+  font-size: 17px;
+  font-weight: 400;
+  color: #fff;
+}
+footer .text p{
+  font-size: 17px;
+  font-weight: 400;
+  color: #fff;
+}
 footer .text span a{
   font-weight: 500;
   color: #FFF;
@@ -399,6 +434,7 @@ footer .text span a:hover{
   box-shadow: rgba(0, 0, 0, 0.15);
   display: none;
 }
+
 
 /* Responsive Media Query */
 @media (max-width: 1190px) {
@@ -440,7 +476,7 @@ footer .text span a:hover{
     position: fixed;
     left: -100%;
     top: 0;
-    background: #0E2431;
+    background: #4070f4;
     height: 100vh;
     max-width: 400px;
     width: 100%;
@@ -459,7 +495,12 @@ footer .text span a:hover{
     margin: 10px 0;
   }
   nav.sticky .menu a:hover{
-    color: #4070f4;
+    color: #71b8f3;
+    border: 2px solid black;
+    border-radius: 20px;
+    width: 120px;
+    text-align: center;
+    background-color: #0E2431;
   }
   nav .navbar .media-icons{
     display: none;

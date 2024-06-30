@@ -1,0 +1,64 @@
+body {
+    height: 90vh;
+    width: 90%;
+    background: url("BDWallpaper.jpg") center/cover no-repeat;
+}
+
+.body {
+    padding-left: 50px;
+    padding-top: 120px;
+}
+
+.body h1{
+    padding-bottom: 200px;
+}
+.body h1 b{
+    color: #4e0677;
+}
+
+.body a {
+    background-color: #061777;
+    color: #fff;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    
+}
+.body br {
+    display: none;
+}
+
+@media (max-width: 750px) {
+    body {
+        height: 100vh;
+        width: 90%;
+        background: url("BDWallpaper.jpg") center/cover no-repeat;
+    }
+    .body {
+        padding-left: 20px;
+        padding-top: 80px;
+    }
+    .body h1{
+        padding-bottom: 95px;
+    }
+    .body a {
+        background-color: #061777;
+        color: #fff;
+        padding-left: 38px;
+        padding-right: 38px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-radius: 20px;
+        text-decoration: none;
+        margin: 50px;
+        margin-bottom: 50px;
+        
+    }
+    .body br {
+        display: block;
+    }
+
+}
