@@ -62,3 +62,13 @@ body {
     }
 
 }
+@media (max-width: 750px) {
+   .body a {
+        padding-left: 23px;
+        padding-right: 23px;
+        padding-top: 13px;
+        padding-bottom: 13px;
+        border-radius: 10px;
+    }
+
+}
