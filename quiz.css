@@ -383,13 +383,13 @@ footer button.show{
 }
 @media (max-width: 750px) {
     .info_box {
-      width: 350px;
+      width: 300px;
     }
-    .quiz_box{
-        width: 350px;
+    .quiz_box {
+        width: 300px;
       }
       .result_box {
-        width: 350px;
+        width: 300px;
       }
 
 }
