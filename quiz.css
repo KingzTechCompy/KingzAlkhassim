@@ -381,3 +381,8 @@ footer button.show{
     color: #fff;
     background: #007bff;
 }
+@media (max-width: 750px) {
+    .info_box {
+        width: 350px;
+    }
+}
