@@ -240,8 +240,8 @@ section .title span::after{
   width: 45%;
 }
 .about .left img{
-  height: 400px;
-  width: 400px;
+  height: 300px;
+  width: 300px;
   object-fit: cover;
   border-radius: 12px;
 }
@@ -424,8 +424,8 @@ footer .text span a:hover{
 /* Scroll TO Top Button CSS */
 .scroll-button a{
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 70px;
+  right: 33px;
   color: #fff;
   background: #4070f4;
   padding: 7px 12px;;
@@ -535,6 +535,10 @@ footer .text span a:hover{
   }
   .contact .text{
     width: 100%;
+}
+.scroll-button a{
+  right: 26px;
+  bottom: 80px;
 }
 }
 

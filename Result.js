@@ -1,5 +1,5 @@
-const dynamicText = document.querySelector(".text-three .body span");
-const words = ["A Programmer.", "A Web developer.", "A hero.", "A friendly guy.", "Check the tornament result.",];
+const dynamicText = document.querySelector("h1 span");
+const words = ["Happy Birthday.", "19 Aug is your day.", "We wish you happy Birthday.", "We love you.", "The programmer.", "Welcome's everyone.", "Love's you All.", "Owner of KingzTech."];
 
 // Variables to track the position and deletion status of the word
 let wordIndex = 0;
@@ -30,27 +30,3 @@ const typeEffect = () => {
 }
 
 typeEffect();
-
-
-
-//get modal
-var modal = document.getElementById('mymodal');
-
-//inserting img in the modal -  use its "alt" text as a caption
-var img = document.getElementById('mylogo');
-var modalImg = document.getElementById('img01');
-var captionText = document.getElementById('caption');
-img.onclick = function() {
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-}
-
-//get the span element that closes the modal
-
-var span = document.getElementsByClassName("closes")[0];
-
-//when the user click on the <span> (x) close the modal
-span.onclick = function() {
-    modal.style.display = "none";
-}
