@@ -9,7 +9,7 @@ const inputInitHeight = chatInput.scrollHeight;
 
 // API configuration
 const API_KEY = "AIzaSyBDwngcSoX_SZaHhSz_sQmVw7a66f6krn4";
-const API_URL = `https://generativelanguage.googleapis.com/v1/models/gemini-pro:generateContent?key=${API_KEY}`;
+const API_URL = `https://generativelanguage.googleapis.com/v1/models/gemini-2.0-flash:generateContent?key=${API_KEY}`;
 
 const createChatLi = (message, className) => {
   // Create a chat <li> element with passed message and className
