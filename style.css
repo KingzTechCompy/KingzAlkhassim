@@ -221,7 +221,8 @@ section .title span{
   padding-bottom: 8px;
 }
 section .title span::before,
-section .title span::after{
+section .title span::after{
+  content: '';
   position: absolute;
   height: 3px;
   width: 100%;
