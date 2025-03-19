@@ -204,7 +204,8 @@ section .content{
   font-family: 'Poppins', sans-serif;
 }
 .about .about-details{
-  display: flex;
+  display: flex;
+  justify-content: space between;
   align-items: center;
 }
 section .title{
