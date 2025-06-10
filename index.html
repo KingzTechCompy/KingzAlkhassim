@@ -62,7 +62,25 @@
           </svg>
           <h2 class="logo-text">K-XpertAI</h2>
         </div>
-<button style="color: white; Background: linear-gradient(135deg, #5C56E1, #8B5CF6); width: 70px; height: 40px; border-radius: 20px; font-size: 7px">Image Generator</button>
+<button style="color: white; Background: linear-gradient(135deg, #5C56E1, #8B5CF6); width: 70px; height: 40px; border-radius: 20px; font-size: 7px  onclick="openPopup()">Image Generator</button>
+
+
+  <!-- Modal -->
+  <div id="popupModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closePopup()">&times;</span>
+      <h2>Useful Information</h2>
+      <p>Here you can put any content, like:</p>
+      <ul>
+        <li>🔗 <a href="https://yourwebsite.com">Visit our site</a></li>
+        <li>📝 A short form or input field</li>
+        <li>📢 Announcements or tips</li>
+      </ul>
+    </div>
+  </div>
+
+
+
         <button id="close-chatbot" class="material-symbols-rounded">keyboard_arrow_down</button>
       </div>
 
