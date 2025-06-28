@@ -422,7 +422,7 @@ footer .text span a:hover{
   text-decoration: underline;
 }
 /* Scroll TO Top Button CSS */
-.scroll-down a{
+.scroll-button a{
   position: fixed;
   bottom: 70px;
   right: 33px;
