@@ -60,13 +60,5 @@ function createConfetti() {
       setInterval(createConfetti, 120);
 
 function playSong() {
-    document.getElementById('bgSong').play();
-    localStorage.setItem("musicPlaying", "true"); // save state
+    document.getElementById("musicFrame").contentWindow.postMessage("playMusic", "*");
   }
-
-  // Auto play again on every page load if already started
-  window.onload = function() {
-    if (localStorage.getItem("musicPlaying") === "true") {
-      document.getElementById('bgSong').play();
-    }
-  };
