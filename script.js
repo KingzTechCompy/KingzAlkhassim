@@ -61,10 +61,10 @@ function createConfetti() {
 
 function playSong() {
     document.getElementById('bgSong').play();
-    localStorage.setItem("musicPlaying", "true"); // save play state
+    localStorage.setItem("musicPlaying", "true"); // save state
   }
 
-  // Keep playing across all pages
+  // Auto play again on every page load if already started
   window.onload = function() {
     if (localStorage.getItem("musicPlaying") === "true") {
       document.getElementById('bgSong').play();
