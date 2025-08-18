@@ -80,5 +80,17 @@
     <!-- Inside this JavaScript file I've coded all Quiz Codes -->
     <script src="mm.js"></script>
 
+
+<iframe src="music.html" style="display:none;" id="musicFrame"></iframe>
+
+<script>
+  // auto-play if already started
+  window.onload = function() {
+    if (localStorage.getItem("musicPlaying") === "true") {
+      document.getElementById("musicFrame").contentWindow.postMessage("playMusic", "*");
+    }
+  };
+</script>
+
 </body>
 </html>
