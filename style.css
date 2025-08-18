@@ -564,15 +564,15 @@ body {
       height: 100vh;
     }
 
-    /* Confetti */
     .confetti {
-      position: fixed;
-      width: 10px;
-      height: 10px;
-      top: -10px;
-      animation: fall 4s linear infinite;
-      z-index: 2;
-    }
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  top: -10px;
+  animation: fall 4s linear infinite;
+  z-index: 999999; /* super high value */
+  pointer-events: none; /* so it doesn't block clicks */
+}
     @keyframes fall {
       to {
         transform: translateY(100vh) rotate(720deg);
