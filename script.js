@@ -58,3 +58,15 @@ function createConfetti() {
       }
   
       setInterval(createConfetti, 120);
+
+function playSong() {
+    document.getElementById('bgSong').play();
+    localStorage.setItem("musicPlaying", "true"); // save play state
+  }
+
+  // Keep playing across all pages
+  window.onload = function() {
+    if (localStorage.getItem("musicPlaying") === "true") {
+      document.getElementById('bgSong').play();
+    }
+  };
