@@ -1,5 +1,5 @@
 const dynamicText = document.querySelector(".text-three .body span");
-const words = ["A Programmer.", "A Web developer.", "A hero.", "A friendly guy.", "Hire me for work"];
+const words = ["Wish you happy Birthday.", "Happy Birthday.", "19 Aug is your day.", "We love you.", "The programmer.", "Welcome's everyone.", "Love's you All.", "Owner of KingzTech."];
 
 // Variables to track the position and deletion status of the word
 let wordIndex = 0;
