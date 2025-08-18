@@ -560,8 +560,7 @@ body {
       margin: 0;
       padding: 0;
       background: #fdf6f9;
-      overflow: hidden;
-      height: 100vh;
+      
     }
 
     .confetti {
