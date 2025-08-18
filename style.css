@@ -577,3 +577,9 @@ body {
         transform: translateY(100vh) rotate(720deg);
       }
     }
+
+html, body {
+  overflow-x: hidden;   /* only hides horizontal scroll */
+  overflow-y: auto;     /* allows vertical scroll */
+  height: auto;         /* lets body grow with content */
+}
