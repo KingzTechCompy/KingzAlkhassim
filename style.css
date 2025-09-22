@@ -554,32 +554,3 @@ footer .text span a:hover{
     color: #4070f4;
   }
 }
-
-
-body {
-      margin: 0;
-      padding: 0;
-      background: #fdf6f9;
-      
-    }
-
-    .confetti {
-  position: fixed;
-  width: 10px;
-  height: 10px;
-  top: -10px;
-  animation: fall 4s linear infinite;
-  z-index: 999999; /* super high value */
-  pointer-events: none; /* so it doesn't block clicks */
-}
-    @keyframes fall {
-      to {
-        transform: translateY(100vh) rotate(720deg);
-      }
-    }
-
-html, body {
-  overflow-x: hidden;   /* only hides horizontal scroll */
-  overflow-y: auto;     /* allows vertical scroll */
-  height: auto;         /* lets body grow with content */
-}
