@@ -5,8 +5,8 @@
     --bg-color: #050505;
     --card-bg: rgba(255, 255, 255, 0.03);
     --glass-border: 1px solid rgba(255, 255, 255, 0.08);
-    --primary: #4070f4; /* Keeping your brand blue */
-    --accent: #8b5cf6;  /* Adding purple for cyber feel */
+    --primary: #4070f4; 
+    --accent: #8b5cf6; 
     --text-main: #ffffff;
     --text-muted: #b3b3b3;
 }
@@ -73,6 +73,8 @@ nav .navbar {
 }
 .menu a:hover { color: var(--primary); text-shadow: 0 0 10px rgba(64, 112, 244, 0.5); }
 
+/* Navbar Social Icons */
+.media-icons { display: flex; }
 .media-icons a {
     color: var(--primary);
     font-size: 18px;
@@ -83,6 +85,7 @@ nav .navbar {
 
 /* Mobile Menu Button */
 .menu-btn { display: none; color: var(--text-main); font-size: 24px; cursor: pointer; }
+.cancel-btn { display: none; }
 
 /* Hero Section */
 .home {
@@ -168,6 +171,7 @@ nav .navbar {
     border: 1px solid rgba(255,255,255,0.2);
     box-shadow: 0 0 30px rgba(0,0,0,0.5);
     transition: 0.3s;
+    cursor: pointer;
 }
 .glass-img:hover { transform: scale(1.02); border-color: var(--primary); }
 
@@ -239,14 +243,19 @@ footer {
 }
 footer .text span { color: var(--text-main); }
 footer .text a { color: var(--primary); font-weight: 600; }
-.media-icons-footer { margin-top: 20px; }
+.media-icons-footer { 
+    margin-top: 20px; 
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
 .media-icons-footer a {
     color: var(--text-muted);
     font-size: 22px;
-    margin: 0 15px;
     transition: 0.3s;
 }
-.media-icons-footer a:hover { color: var(--primary); }
+.media-icons-footer a:hover { color: var(--primary); transform: translateY(-3px); }
 
 /* Ambient Glow Orbs */
 .glow-orb {
@@ -266,7 +275,7 @@ footer .text a { color: var(--primary); font-weight: 600; }
 .scroll-button a {
     position: fixed;
     bottom: 30px;
-    right: 20px; /* Adjusted to not overlap chatbot */
+    right: 20px; 
     color: #fff;
     background: var(--primary);
     padding: 10px 14px;
