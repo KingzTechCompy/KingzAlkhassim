@@ -1,366 +1,71 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="theme-color" content="#4070f4">
-<meta name="msapplication-navbutton-color" content="#4070f4">
-<meta name="apple-mobile-web-app-status-bar-style" content="blue">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KingzAlkhassim | Creative Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-    <title>kingzAlkhasim</title>
-<meta name="description" content="Explore my portfolio and projects as a skilled web developer and programmer with expertise in HTML, CSS, JavaScript, and Python." />
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "KingzAlkhassim Lawal Umar",
-  "url": "https://kingzalkhassim.netlify.app/",
-  "jobTitle": "Programmer",
-  "sameAs": [
-    "https://youtube.com/@kingzalkhassim",
-    "https://x.com/KingzAlkhasim",
-    "[Any other professional or social media profiles you have]"
-  ],
-  "logo": {
-    "@type": "ImageObject",
-    "url": "https://kingzalkhassim.netlify.app/mylogo.png",
-    "caption": "Alkhassim Lawal Umar kingzAlkhasim Official Logo"
-  }
-}
-</script>
-
-
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="icons.css">
-<link rel="stylesheet" href="imagegen.css">
-    <!--<link rel="stylesheet" href="balloon.css">-->
-    <!-- Fontawesome CDN Link -->
-    
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
-    <link rel="stylesheet" href="AI.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="manifest" href="/Manifest.json">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css" rel="stylesheet" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
-<meta name="google-site-verification" content="-pOwu_HKfCUGRi02jFjMC8tlb0xJc3xpN3SXWRajfQs" />
-<link rel="icon" type="image/png" href="favicon-32x32.png">
-<link rel="icon" type="image/x-icon" href="favicon.ico">
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-THZ0WMVXYB"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-THZ0WMVXYB');
-</script>
-
-  </head>
-  <body>
-    <!-- Move to up button -->
-    <div class="scroll-button">
-      <a href="#home"><i class="fas fa-arrow-up"></i></a>
-    </div>
-
-      <!-- Chatbot Toggler -->
-    <button id="chatbot-toggler">
-      <span class="material-symbols-rounded">mode_comment</span>
-      <span class="material-symbols-rounded">close</span>
-    </button>
-
-    <div class="chatbot-popup">
-      <!-- Chatbot Header -->
-      <div class="chat-header">
-        <div class="header-info">
-          <svg class="chatbot-logo" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 1024 1024">
-            <path
-              d="M738.3 287.6H285.7c-59 0-106.8 47.8-106.8 106.8v303.1c0 59 47.8 106.8 106.8 106.8h81.5v111.1c0 .7.8 1.1 1.4.7l166.9-110.6 41.8-.8h117.4l43.6-.4c59 0 106.8-47.8 106.8-106.8V394.5c0-59-47.8-106.9-106.8-106.9zM351.7 448.2c0-29.5 23.9-53.5 53.5-53.5s53.5 23.9 53.5 53.5-23.9 53.5-53.5 53.5-53.5-23.9-53.5-53.5zm157.9 267.1c-67.8 0-123.8-47.5-132.3-109h264.6c-8.6 61.5-64.5 109-132.3 109zm110-213.7c-29.5 0-53.5-23.9-53.5-53.5s23.9-53.5 53.5-53.5 53.5 23.9 53.5 53.5-23.9 53.5-53.5 53.5zM867.2 644.5V453.1h26.5c19.4 0 35.1 15.7 35.1 35.1v121.1c0 19.4-15.7 35.1-35.1 35.1h-26.5zM95.2 609.4V488.2c0-19.4 15.7-35.1 35.1-35.1h26.5v191.3h-26.5c-19.4 0-35.1-15.7-35.1-35.1zM561.5 149.6c0 23.4-15.6 43.3-36.9 49.7v44.9h-30v-44.9c-21.4-6.5-36.9-26.3-36.9-49.7 0-28.6 23.3-51.9 51.9-51.9s51.9 23.3 51.9 51.9z"
-            />
-          </svg>
-          <h2 class="logo-text">K-XpertAI</h2>
-        </div>
-<button style="color: white; Background: linear-gradient(135deg, #5C56E1, #8B5CF6); width: 70px; height: 40px; border-radius: 20px; font-size: 7px  onclick="openPopup()">Image Generator</button>
-
-
-  <!-- Modal -->
-  <div id="popupModal" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closePopup()">&times;</span>
-      <h2>Useful Information</h2>
-      <p>Here you can put any content, like:</p>
-      <ul>
-        <li>🔗 <a href="https://yourwebsite.com">Visit our site</a></li>
-        <li>📝 A short form or input field</li>
-        <li>📢 Announcements or tips</li>
-      </ul>
-    </div>
-  </div>
-
-
-
-        <button id="close-chatbot" class="material-symbols-rounded">keyboard_arrow_down</button>
-      </div>
-
-      <!-- Chatbot Body -->
-      <div class="chat-body">
-        <div class="message bot-message">
-          <svg class="bot-avatar" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 1024 1024">
-            <path
-              d="M738.3 287.6H285.7c-59 0-106.8 47.8-106.8 106.8v303.1c0 59 47.8 106.8 106.8 106.8h81.5v111.1c0 .7.8 1.1 1.4.7l166.9-110.6 41.8-.8h117.4l43.6-.4c59 0 106.8-47.8 106.8-106.8V394.5c0-59-47.8-106.9-106.8-106.9zM351.7 448.2c0-29.5 23.9-53.5 53.5-53.5s53.5 23.9 53.5 53.5-23.9 53.5-53.5 53.5-53.5-23.9-53.5-53.5zm157.9 267.1c-67.8 0-123.8-47.5-132.3-109h264.6c-8.6 61.5-64.5 109-132.3 109zm110-213.7c-29.5 0-53.5-23.9-53.5-53.5s23.9-53.5 53.5-53.5 53.5 23.9 53.5 53.5-23.9 53.5-53.5 53.5zM867.2 644.5V453.1h26.5c19.4 0 35.1 15.7 35.1 35.1v121.1c0 19.4-15.7 35.1-35.1 35.1h-26.5zM95.2 609.4V488.2c0-19.4 15.7-35.1 35.1-35.1h26.5v191.3h-26.5c-19.4 0-35.1-15.7-35.1-35.1zM561.5 149.6c0 23.4-15.6 43.3-36.9 49.7v44.9h-30v-44.9c-21.4-6.5-36.9-26.3-36.9-49.7 0-28.6 23.3-51.9 51.9-51.9s51.9 23.3 51.9 51.9z"
-            />
-          </svg>
-          <!-- prettier-ignore -->
-          <div class="message-text"> Hey there  <br /> How can I help you today? </div>
-        </div>
-      </div>
-
-      <!-- Chatbot Footer -->
-      <div class="chat-footer">
-        <form action="#" class="chat-form">
-          <textarea placeholder="Message..." class="message-input" required></textarea>
-          <div class="chat-controls">
-            <button type="button" id="emoji-picker" class="material-symbols-outlined">sentiment_satisfied</button>
-            <div class="file-upload-wrapper">
-              <input type="file" accept="image/*" id="file-input" hidden />
-              <img src="#" />
-              <button type="button" id="file-upload" class="material-symbols-rounded">attach_file</button>
-              <button type="button" id="file-cancel" class="material-symbols-rounded">close</button>
-            </div>
-            <button type="submit" id="send-message" class="material-symbols-rounded">arrow_upward</button>
-          </div>
-        </form>
-      </div>
-    </div>
-
-    <!-- Linking Emoji Mart script for emoji picker -->
-    <script src="https://cdn.jsdelivr.net/npm/emoji-mart@latest/dist/browser.js"></script>
-
-  
-
-    <!-- navgaition menu -->
-    <nav>
-      <div class="navbar">
-        <div class="logo"><a href="#">kingzAlkhasim.</a></div>
-        <ul class="menu">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <div class="cancel-btn">
-            <i class="fas fa-times"></i>
-          </div>
+    <nav class="navbar">
+        <div class="logo">Kingz<span class="accent">Alkhasim.</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Stack</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact" class="btn-primary">Hire Me</a></li>
         </ul>
-        <div class="media-icons">
-          <a href="https://www.facebook.com/profile.php?id=61572372527056"><i class="fab fa-facebook-f"></i></a>
-          <a href="https://twitter.com/KingzAlkhasim?t=_5X2e64DWBTHSLvc-Y4I8Q&s=09"><i class="fab fa-x-twitter"></i></a>
-          <a href="https://www.instagram.com/Kingz_alkhassim/"><i class="fab fa-instagram"></i></a>
-          <a href="https://www.linkedin.com/in/kingzalkhassim-lawal-71891b348?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i></a>
-          <a href="https://github.com/Doreally2gd"><i class="fab fa-github"></i></a>
-          <a href="https://discord.gg/aBCGrUBfwQ"><i class="fab fa-discord"></i></a>
-        </div>
-      </div>
-      <div class="menu-btn">
-        <i class="fas fa-bars"></i>
-      </div>
+        <div class="hamburger"><i class="fas fa-bars"></i></div>
     </nav>
-    <div id="balloon-container"></div>
-   <!--<script src="balloon.js"></script>-->
 
-    <!-- Home Section Start -->
-    <section class="home" id="home">
-      <div class="home-content">
-        <div class="text">
-          <div class="text-one">Hello,</div>
-          <div class="text-two">I'm Alkhassim Lawal</div>
-          <div class="text-three">
-            <div class="body"><span></span></div>
-          </div>
-
-          <div class="text-four">from Nigeria</div>
-
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <span class="tagline">Welcome to my digital realm</span>
+            <h1>I am <span class="gradient-text">Alkhassim Lawal</span></h1>
+            <div class="typing-container">
+                <span class="static-txt">I am a </span>
+                <span class="dynamic-txt"></span> </div>
+            <p>Web Developer, Programmer, and Founder of KingzTech.</p>
+            <div class="hero-btns">
+                <a href="#contact" class="btn-glow">Let's Talk</a>
+                <button onclick="playSong()" class="btn-outline"><i class="fas fa-play"></i> Mood Music</button>
+            </div>
         </div>
-        <div class="button">
-          <button><a href="#" onclick="playSong()">Nothing Yet</a></button>
-
-<!-- <iframe src="music.html" style="display:none;" id="musicFrame"></iframe> -->
-
-        </div>
-      </div>
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
     </section>
 
-    <!-- About Section Start -->
-    <section class="about" id="about">
-      <div class="content">
-        <div class="title"><span>About Me</span></div>
-        <div class="about-details">
-          <div class="left">
-            <img src="mylogo.png" alt="KingzAlkhassim Official Logo" id="mylogo" />
-            <div id="mymodal" class="modal">
-              <span class="closes">&times;</span>
-              <img class="modal-content" id="img01">
-              <div id="caption"></div>
+    <section id="skills" class="section">
+        <h2 class="section-title">My Tech Stack</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <i class="fab fa-html5"></i>
+                <h3>HTML5</h3>
+                <div class="progress-bar"><div class="fill" style="width: 99%"></div></div>
             </div>
-          </div>
-          <div class="right">
-            <div class="topic">Designing Is My Passion</div>
-            <p>Hi! 👋 I'm Alkhassim, popularly known as KingzAlkhassim.
-
-I'm a web developer, programmer, and entrepreneur with expertise in web development, as well as skills in graphic design, UI/UX design, and application development. I studied programming at Kaduna ICT Hub and have a passion for building innovative digital solutions.
-
-I founded <a href="#">KingxTech(not done)</a>, a software company dedicated to creating web applications that enable users/programmers to chat, interact,Collab and have fun. I believe that great design should be both functional and visually appealing, and I strive to develop solutions that balance effectiveness with aesthetics.
-
-Beyond web development, I have experience in tailoring, repairing electronic devices, and ethical hacking. I'm also interested in AI development, cybersecurity, and game design. Currently, I'm working on projects such as KingxTech IDE and K-XpertAI, an AI assistant for coding.
-
-You can explore more about my work and skills below, where I explain my expertise in detail.<br> <b><i>CV</i> are available for download</b> 
-            </p>
-            <div class="button">
-              <a href="https://Doreally2gd.github.io/KingzAlkhassim/Creative_Alkhassim_Lawal_CV.pdf"
-              download="Creative_Alkhassim_Lawal_CV.pdf">
-              <button>Download CV</button>
-            </a>
+            <div class="skill-card">
+                <i class="fab fa-css3-alt"></i>
+                <h3>CSS3</h3>
+                <div class="progress-bar"><div class="fill" style="width: 90%"></div></div>
             </div>
-          </div>
+            <div class="skill-card">
+                <i class="fab fa-js"></i>
+                <h3>JavaScript</h3>
+                <div class="progress-bar"><div class="fill" style="width: 77%"></div></div>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-python"></i>
+                <h3>Python</h3>
+                <div class="progress-bar"><div class="fill" style="width: 60%"></div></div>
+            </div>
         </div>
-      </div>
     </section>
 
-    <!-- My Skill Section Start -->
-    <!-- Section Tag and Other Div will same where we need to put same CSS -->
-    <section class="skills" id="skills">
-      <div class="content">
-        <div class="title"><span>My Skills</span></div>
-        <div class="skills-details">
-          <div class="text">
-            <div class="topic">Skills Reflects Our Knowledge</div>
-            <p>Proficient in HTML/CSS and JavaScript and even in python and Adobe Creative suite. With 2+years of experience, i actually know alot in programming but i am still learning more about ", PHP/MYSQLI and python, React js, Angular and Drupal ". </p>
-            <div class="experience">
-              <div class="num">2+</div>
-              <div class="exp">
-                Years Of <br />
-                Experience
-              </div>
-            </div>
-          </div>
-          <div class="boxes">
-            <div class="box">
-              <div class="topic">HTML</div>
-              <div class="per">99%</div>
-            </div>
-            <div class="box">
-              <div class="topic">CSS</div>
-              <div class="per">90%</div>
-            </div>
-            <div class="box">
-              <div class="topic">JavaScript</div>
-              <div class="per">77%</div>
-            </div>
-            <div class="box">
-              <div class="topic">PHP</div>
-              <div class="per">55%</div>
-            </div>
-            <div class="box">
-              <div class="topic">Python</div>
-              <div class="per">46%</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- My Services Section Start -->
-    <section class="services" id="services">
-      <div class="content">
-        <div class="title"><span>My Services</span></div>
-        <div class="boxes">
-          <div class="box">
-            <div class="icon">
-              <i class="fas fa-desktop"></i>
-            </div>
-            <div class="topic">Web Devlopment</div>
-            <p>I can design/develop a responsible website, website maintenance and update, Custom web application, website security and optimization etc..</p>
-          </div>
-          <div class="box">
-            <div class="icon">
-              <i class="fas fa-paint-brush"></i>
-            </div>
-            <div class="topic">Graphic Design</div>
-            <p>i can design logo and branding, Business card design, Package design, Poster and banner design and even social media Graphics etc..</p>
-          </div>
-          <div class="box">
-            <div class="icon">
-              <i class="fas fa-chart-line"></i>
-            </div>
-            <div class="topic">Digital Marketing</div>
-            <p>Expert in advertising through social media(SMM), analytics and reporting, online reputation and management, (PPC) pay-per-click advertising etc..</p>
-          </div>
-          <div class="box">
-            <div class="icon">
-              <i class="fab fa-android"></i>
-            </div>
-            <div class="topic">Icon Design</div>
-            <p>Creating cutom icons for websites and application, Icon set creation, Icon design for social media and marketing materials, UI/UX design, brand identity design, infograpic design etc..</p>
-          </div>
-          <div class="box">
-            <div class="icon">
-              <i class="fas fa-camera-retro"></i>
-            </div>
-            <div class="topic">Photography</div>
-            <p>Portrait Photography,landscape and cityscape Photography, product Photography, editorial Photography, Fine art Photography, Event Photography (weddiing, etc..) etc..</p>
-          </div>
-          <div class="box">
-            <div class="icon">
-              <i class="fas fa-tablet-alt"></i>
-            </div>
-            <div class="topic">Apps Devlopment</div>
-          <p>I can design (Android and IOS) mobile apps, Cross-platform app development, custom app solutions for Businesses, Internet of Things (IoT) app development, API Intergration, etc..</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Contact Me section Start -->
-    <section class="contact" id="contact">
-      <div class="content">
-        <div class="title"><span>Contact Me</span></div>
-        <div class="text">
-          <div class="topic">Have Any Project?</div>
-          <p>If you have any project or design you want! please feel free to chat me by pressing the button below and explain the work and type of design you want, and i will make it as soon as possible, because all what i want is your support, let's build in here!!! .</p>
-          <div class="button">
-            <button><a href="https://Wa.me/+2348032775925">Hire me</a></button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Footer Section Start -->
-    <footer>
-      <div class="text">
-        <span>Created By <a href="#">KingxTech</a> | &#169; 2025 All Rights Reserved</span>
-        <p><b>A</b>ll i want is your support. <br><b>Y</b>ou can follow me in here <br> <b><i>By pressing the following button of social media below</i></b></p>
-        <br><br>
-        <div class="media-icons-1">
-          <a href="https://Wa.me/+2348032775925"><i class="fab fa-whatsapp"></i></a>
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="https://twitter.com/KingzAlkhasim?t=_5X2e64DWBTHSLvc-Y4I8Q&s=09"><i class="fab fa-x-twitter"></i></a>
-          <a href="https://www.linkedin.com/in/kingzalkhassim-lawal-71891b348?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i></a>
-          <a href="https://www.instagram.com/real_kingzalkhasim/"><i class="fab fa-instagram"></i></a>
-          <a href="https://github.com/Doreally2gd"><i class="fab fa-github"></i></a>
-          <a href="https://www.tiktok.com/@kingzAlkhasim_?_t=8ndKLNRaOe5&_r=1"><i class="fab fa-tiktok"></i></a>
-          <a href="https://discord.gg/aBCGrUBfwQ"><i class="fab fa-discord"></i></a>
-          
-        </div>
-        <br>
-      </div>
-    </footer>
-
-    <script src="script.js"></script>
     <script src="Intro.js"></script>
-    <script src="AI.js"></script>
-<script src="imagegen.js></script>
-  </body>
+    <script src="script.js"></script>
+</body>
 </html>
